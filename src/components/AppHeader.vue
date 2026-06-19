@@ -29,15 +29,15 @@
           <li class="dropdown">
             <router-link
               to="#"
-              :class="{ active: isActive('product') }"
-              @click.prevent="scrollTo('product')"
+              :class="{ active: isActive('product') || isProductDropdownOpen }"
+              @click.prevent="handleProductClick"
             >
               {{ t().products }}
-              <i class="bi bi-chevron-down toggle-dropdown"></i>
+              <i class="bi bi-chevron-down toggle-dropdown" @click.stop.prevent="toggleDropdown"></i>
             </router-link>
-            <ul>
+            <ul :class="{ 'dropdown-active': isProductDropdownOpen }">
               <li v-for="value in products" :key="value.id">
-                <router-link :to="{ path: '/product/' + value.id }">
+                <router-link :to="{ path: '/product/' + value.id }" @click="closeMobileMenu">
                   {{ value.title }}
                 </router-link>
               </li>
@@ -93,7 +93,8 @@ export default {
     return {
       products: [],
       activeSection: "home",
-      currentLang: "en"
+      currentLang: "en",
+      isProductDropdownOpen: false
     };
   },
   created() {
@@ -181,6 +182,22 @@ export default {
       if (this.$route.path.includes("/product/")) {
         this.activeSection = "product";
       }
+    },
+    handleProductClick(e) {
+      if (document.body.classList.contains("mobile-nav-active")) {
+        this.toggleDropdown();
+      } else {
+        this.scrollTo('product');
+      }
+    },
+    toggleDropdown() {
+      this.isProductDropdownOpen = !this.isProductDropdownOpen;
+    },
+    closeMobileMenu() {
+      if (document.body.classList.contains("mobile-nav-active")) {
+        this.toggleMobileMenu();
+      }
+      this.isProductDropdownOpen = false;
     },
     toggleMobileMenu() {
       document.body.classList.toggle("mobile-nav-active");

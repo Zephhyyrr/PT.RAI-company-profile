@@ -4,7 +4,7 @@
       class="container-fluid container-xl position-relative d-flex align-items-center"
     >
       <router-link to="/" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo/favicon.png" alt="Rumpun Alam Indonesia Logo" class="img-fluid" />
+        <img src="/assets/img/logo/favicon.png" alt="Rumpun Alam Indonesia Logo" class="img-fluid" />
         <h1 class="sitename">Rumpun Alam Indonesia</h1>
       </router-link>
 

@@ -1,5 +1,31 @@
 [
   {
+    "id": "cocofiber",
+    "title": "Cocofiber (Sabut Kelapa)",
+    "intro": {
+      "Asal Usul": "Berasal dari sabut kelapa pilihan di Indonesia.",
+      "Keunggulan": "Kuat, tahan lama, dan ramah lingkungan.",
+      "Penggunaan": "Banyak digunakan untuk industri, pertanian, dan rumah tangga."
+    },
+    "benefit": {
+      "Ramah Lingkungan": "100% organik dan dapat terurai secara alami.",
+      "Tahan Air Asin": "Sangat tahan terhadap kerusakan akibat air asin dan degradasi mikroba.",
+      "Menyuburkan Tanah": "Sangat baik digunakan sebagai media tanam dan penahan air."
+    },
+    "usage": {
+      "Pertanian": "Sebagai media tanam (cocopeat) atau mulsa.",
+      "Industri": "Bahan utama pembuatan tali, keset, sikat, dan matras.",
+      "Pengendalian Erosi": "Sering digunakan sebagai geotextile untuk menstabilkan tanah."
+    },
+    "closing": "Cocofiber adalah solusi alami dan serbaguna untuk kebutuhan industri maupun lingkungan.",
+    "images": [
+      "/assets/img/images/cocofiber/cocofiber1.jpeg",
+      "/assets/img/images/cocofiber/cocofiber2.jpeg",
+      "/assets/img/images/cocofiber/cocofiber3.jpeg",
+      "/assets/img/images/cocofiber/cocofiber4.jpeg"
+    ]
+  },
+  {
     "id": "cardamom",
     "title": "Kapulaga",
     "intro": {
@@ -123,5 +149,5 @@
       "Cocok untuk Semua Masakan": "Kombinasikan dengan masakan manis dan gurih untuk variasi rasa."
     },
     "closing": "Buah pala adalah bumbu kaya rempah yang wajib dicoba."
-  }  
+  }
 ]

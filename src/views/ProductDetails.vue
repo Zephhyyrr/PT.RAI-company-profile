@@ -6,14 +6,38 @@
         <div class="row gy-4 justify-content-center">
           <!-- Carousel for Images -->
           <div class="col-lg-8" data-aos="fade-up">
-            <v-carousel height="400">
-              <v-carousel-item
-                v-for="(image, index) in product.images"
-                :key="index"
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" style="border-radius: 8px;">
+                <div
+                  v-for="(image, index) in product.images"
+                  :key="index"
+                  class="carousel-item"
+                  :class="{ active: index === 0 }"
+                >
+                  <img :src="image" class="d-block w-100 img-feature" alt="Feature Image" />
+                </div>
+              </div>
+              <button
+                v-if="product.images && product.images.length > 1"
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="prev"
               >
-                <img :src="image" class="img-fluid img-feature" alt="Feature Image" />
-              </v-carousel-item>
-            </v-carousel>
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.5); border-radius: 50%; padding: 20px;"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                v-if="product.images && product.images.length > 1"
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#productCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.5); border-radius: 50%; padding: 20px;"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
 
           <!-- Feature Details -->
@@ -116,7 +140,7 @@ export default {
 }
 .img-feature {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 8px;
   object-fit: cover;
 }

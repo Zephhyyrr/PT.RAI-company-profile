@@ -1,12 +1,28 @@
 [
   {
+    "id": "cocofiber",
+    "title": "Cocofiber",
+    "short": "High-quality cocofiber from Indonesia, known for its durability and eco-friendliness.",
+    "description": "Cocofiber, or coir fiber, is a natural fiber extracted from the outer husk of coconut. It is widely used in products such as floor mats, doormats, brushes, and mattresses. It is highly valued for its durability, water resistance, and eco-friendliness.",
+    "Main Characteristics": "1. Durability: Highly resistant to saltwater and microbial degradation.\n\n2. Eco-Friendly: 100% natural and biodegradable.\n\n3. Versatility: Suitable for agriculture, upholstery, and erosion control.",
+    "Usage": "1. Agriculture: Used as a growing medium or mulch.\n\n2. Industrial: Used in manufacturing ropes, mats, and mattresses.\n\n3. Erosion Control: Used to make geotextiles for soil stabilization.",
+    "Nutritional Content": "Rich in lignin and cellulose, which make it extremely strong and slow to decompose.",
+    "Shipping Process": "1. Transport: Pressed and packed in bales to maximize container space.\n\n2. Documentation: Shipped with proper phytosanitary certificates and origin documents.",
+    "images": [
+      "/assets/img/images/cocofiber/cocofiber1.jpeg",
+      "/assets/img/images/cocofiber/cocofiber2.jpeg",
+      "/assets/img/images/cocofiber/cocofiber3.jpeg",
+      "/assets/img/images/cocofiber/cocofiber4.jpeg"
+    ]
+  },
+  {
     "id": "Cinnamon-Stick-6cm",
     "title": "Cinnamon Stick 6CM",
     "short": "Cassia cinnamon length 6.0CM, essential oil content ranges from 4% to 8%",
     "description": "Cinnamon sticks are one of the most classic forms of this spice, known for their elegance and unique shape. Made from the bark of the Cinnamomum tree, cinnamon sticks have a coiled and textured appearance, giving them a charming visual appeal.",
     "Main Characteristics": "1. Alluring Scent: Cinnamon sticks emit a warm and sweet aroma that can whet the appetite and create a cozy atmosphere.\n\n2. Strong Flavor: Provides a distinctive spicy and sweet taste, ideal for use in a variety of dishes, from cakes to savory dishes.\n\n3. Essential Oil Content: Contains high levels of essential oils, providing health benefits and relaxing aromatherapy properties. \n\n4. Cinnamon Sticks (Cinnamon Quills) Form of rolled cinnamon sticks. Commonly used in cooking and beverages.",
     "images": [
-      "/assets/img/images/kayumanis-version/Cinnamon-2.png"
+      "/assets/img/images/kayumanis-version/CinnamonStick-6cm.png"
     ]
   },
   {
@@ -16,7 +32,7 @@
     "description": "Cinnamon sticks are one of the most classic forms of this spice, known for their elegance and unique shape. Made from the bark of the Cinnamomum tree, cinnamon sticks have a coiled and textured appearance, giving them a charming visual appeal.",
     "Main Characteristics": "1. Alluring Scent: Cinnamon sticks emit a warm and sweet aroma that can whet the appetite and create a cozy atmosphere.\n\n2. Strong Flavor: Provides a distinctive spicy and sweet taste, ideal for use in a variety of dishes, from cakes to savory dishes.\n\n3. Essential Oil Content: Contains high levels of essential oils, providing health benefits and relaxing aromatherapy properties. \n\n4. Cinnamon Sticks (Cinnamon Quills) Form of rolled cinnamon sticks. Commonly used in cooking and beverages.",
     "images": [
-      "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png"
+      "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png",
     ]
   },
   {
@@ -40,7 +56,7 @@
     "Usage": "1. In Cooking: Often used in baking, desserts, and traditional dishes that require a touch of cinnamon without an overpowering flavor.\n\n2. Beverages: Ideal for adding to warm beverages such as tea, coffee, or hot chocolate, providing a pleasant aroma and flavor.\n\n3. Decoration: KA/KS type cinnamon is also often used as a decorative element in food and beverage presentation.",
     "Health Benefits": "KA/KS-type cinnamon has anti-inflammatory and antioxidant properties that are beneficial to health. In addition, it can help improve digestion and has the potential to regulate blood sugar levels.",
     "images": [
-      "/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png"
+      "/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png",
     ]
   },
   {
@@ -55,7 +71,8 @@
     "Quality Standards": "1. Pest-free and disease-free.\n\n2. Packaged in safe, international-standard containers to preserve freshness.\n\n3. Certified organic (if applicable) and compliant with food safety standards like HACCP.",
     "Shipping Process": "1. Refrigerated containers are used to maintain freshness during transit.\n\n2. Complete export documentation includes health and origin certificates.",
     "images": [
-      "/assets/img/images/buahpala/buahpala1.png"
+      "/assets/img/images/buahpala/buahpala1.png",
+      "/assets/img/images/buahpala/buahpala2.png"
     ]
   },
   {
@@ -85,7 +102,8 @@
     "Certifications": "Certified organic (if applicable) and compliant with international food safety standards such as HACCP and ISO.",
     "Shipping Process": "1. Transport: Shipped using refrigerated containers to maintain freshness.\n\n2. Documentation: Complete export documents, including health and origin certificates, are ensured.",
     "images": [
-      "/assets/img/images/vanilla/vanilla1.png"
+      "/assets/img/images/vanilla/vanilla1.png",
+      "/assets/img/images/vanilla/vanilla2.png"
     ]
   }
 ]

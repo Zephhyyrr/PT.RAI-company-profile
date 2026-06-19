@@ -72,6 +72,7 @@ export default {
     return {
       items: [
         { src: "assets/img/header/Owner-header.png" },
+        { src: "/assets/img/images/cocofiber/cocofiber1.jpeg" },
         { src: "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png" },
         { src: "/assets/img/images/kayumanis-version/Cinnamon-2.png" },
         { src: "/assets/img/images/kayumanis-version/Cinnamon-KF.png" },

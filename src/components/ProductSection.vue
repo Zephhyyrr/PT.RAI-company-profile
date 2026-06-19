@@ -79,6 +79,47 @@
         </div>
       </div>
 
+      <div v-if="cocofiberDetails.length > 0" data-aos="fade-up">
+        <div class="card mb-4" style="padding: 30px">
+          <h2 class="section-header" style="text-align: center">
+            Cocofiber Form
+          </h2>
+
+          <!-- Limit to the first 3 items -->
+          <div
+            v-for="(item, index) in cocofiberDetails.slice(0, 3)"
+            :key="index"
+          >
+            <h5>{{ item.title }}</h5>
+            <p style="text-align: justify">
+              <strong v-if="item['sub-title']">Sub-title:</strong>
+              {{ item["sub-title"] }}<br />
+              <strong>Description:</strong> {{ item.description }}<br />
+              <strong>Usage:</strong> {{ item.usage }}
+            </p>
+          </div>
+          <!-- Long Description (only once) -->
+          <div v-if="cocofiberLongDescription" style="margin-top: 20px">
+            <h4 style="text-align: center; font-weight: bold">
+              Premium Cocofiber from Indonesia
+            </h4>
+            <p style="text-align: justify">{{ cocofiberLongDescription }}</p>
+          </div>
+
+          <!-- Moisture and Humidity Content (only once) -->
+          <div v-if="cocofiberMoistureHumidity" style="margin-top: 20px">
+            <h4 style="text-align: center; font-weight: bold">
+              {{ cocofiberMoistureHumidity.title }}
+            </h4>
+            <p style="text-align: justify">
+              <strong>Moisture Content:</strong>
+              {{ cocofiberMoistureHumidity["Moisture Content"] }}<br />
+              <strong>Impurities:</strong> {{ cocofiberMoistureHumidity.Humidity }}
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="container section-title pt-5" data-aos="fade-up">
       <h2 style="color: white">We also provide other premium spice products from Indonesia.</h2>
       <p style="color: white">
@@ -122,6 +163,7 @@
 // Import the JSON data
 import products from "../data/products-en.json";
 import cinnamonDetails from "../data/cinnamon-general.json";
+import cocofiberDetails from "../data/cocofiber-general.json";
 
 export default {
   name: "ProductSection",
@@ -129,8 +171,11 @@ export default {
     return {
       products,
       cinnamonDetails,
+      cocofiberDetails,
       longDescription: null,
       moistureHumidity: null,
+      cocofiberLongDescription: null,
+      cocofiberMoistureHumidity: null,
     };
   },
   created() {
@@ -149,6 +194,24 @@ export default {
         title: moistureHumidityItem.title,
         "Moisture Content": moistureHumidityItem["Moisture Content"],
         Humidity: moistureHumidityItem.Humidity,
+      };
+    }
+
+    const cocoLongDescriptionItem = this.cocofiberDetails.find(
+      (item) => item["long-description"]
+    );
+    if (cocoLongDescriptionItem) {
+      this.cocofiberLongDescription = cocoLongDescriptionItem["long-description"];
+    }
+
+    const cocoMoistureHumidityItem = this.cocofiberDetails.find(
+      (item) => item["Moisture Content"]
+    );
+    if (cocoMoistureHumidityItem) {
+      this.cocofiberMoistureHumidity = {
+        title: cocoMoistureHumidityItem.title,
+        "Moisture Content": cocoMoistureHumidityItem["Moisture Content"],
+        Humidity: cocoMoistureHumidityItem.Humidity,
       };
     }
   },

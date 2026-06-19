@@ -78,7 +78,7 @@
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/kayumanis-version/CinnamonStick-8cm.png"
+                src="/assets/img/images/cocofiber/cocofiber1.jpeg"
                 class="img-fluid"
                 alt=""
               />
@@ -114,6 +114,13 @@ export default {
 <style scoped>
 .about-images .col-3 {
   padding: 0; /* Remove padding between images */
+}
+
+.about-images img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 @media (max-width: 576px) {

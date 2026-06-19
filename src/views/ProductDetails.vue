@@ -74,11 +74,17 @@ export default {
   name: "ProductDetail",
   data() {
     return {
-      product: {}
+      product: {},
+      currentLang: "en"
     };
   },
   created() {
-    this.loadProductEn();
+    this.currentLang = localStorage.getItem("app_lang") || "en";
+    if (this.currentLang === "id") {
+      this.loadProductId();
+    } else {
+      this.loadProductEn();
+    }
   },
   computed: {
     featureSections() {
@@ -102,6 +108,13 @@ export default {
     loadProductEn() {
       const productId = this.$route.params.id;
       this.product = products_en.find((p) => p.id === productId);
+      if (!this.product) {
+        if (productId.toLowerCase().includes('cinnamon')) {
+          this.product = products_en.find((p) => p.id === 'Cinnamon-Stick-8cm');
+        } else {
+          this.$router.push('/');
+        }
+      }
     },
     loadProductCn() {
       const productId = this.$route.params.id;
@@ -110,6 +123,13 @@ export default {
     loadProductId() {
       const productId = this.$route.params.id;
       this.product = products_id.find((p) => p.id === productId);
+      if (!this.product) {
+        if (productId.toLowerCase().includes('cinnamon')) {
+          this.product = products_id.find((p) => p.id === 'Cinnamon-Stick-8cm');
+        } else {
+          this.$router.push('/');
+        }
+      }
     },
     formatTitle(key) {
       return key
@@ -119,7 +139,11 @@ export default {
   },
   watch: {
     "$route.params.id": function () {
-      this.loadProductEn();
+      if (this.currentLang === "id") {
+        this.loadProductId();
+      } else {
+        this.loadProductEn();
+      }
     }
   },
   mounted() {

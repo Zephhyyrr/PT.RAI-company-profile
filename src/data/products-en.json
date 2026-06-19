@@ -79,7 +79,7 @@
     "id": "ginger",
     "title": "Ginger",
     "short": "High-quality export ginger from Indonesia, known for its sharp aroma, freshness, and rich nutritional content.",
-    "description": "Ginger (Zingiber officinale) is a tropical plant primarily grown in Indonesia, particularly in regions such as Java, Sumatra, and Bali. It is highly valued for its robust flavor, vibrant aroma, and diverse health benefits.",
+    "description": "Ginger (Zingiber officinale) is a tropical plant primarily grown in Indonesia, particularly in Java, Sumatra, and Bali. It is highly valued for its robust flavor, vibrant aroma, and diverse health benefits.",
     "Main Characteristics": "1. Size: Length ranges from 5-15 cm, with a diameter of 2-5 cm.\n\n2. Appearance: Outer skin is yellowish-brown, while the flesh is yellow or white.\n\n3. Aroma: Distinctively sharp and spicy fragrance.\n\n4. Texture: Rough surface, with dense and fresh flesh.",
     "Quality": "1. Freshness: Ginger must be fresh, free from rot, defects, pests, and diseases.\n\n2. Moisture Content: Optimized to maintain quality and freshness.",
     "Standards": "1. Packaging: Secured in safe, internationally compliant containers to preserve freshness.\n\n2. Labeling: Includes detailed product information such as origin, harvest date, and nutritional content.",
@@ -104,6 +104,18 @@
     "images": [
       "/assets/img/images/vanilla/vanilla1.png",
       "/assets/img/images/vanilla/vanilla2.png"
+    ]
+  },
+  {
+    "id": "cardamom",
+    "title": "Cardamom",
+    "short": "Premium cardamom from Indonesia, known for its intense aroma and rich flavor.",
+    "description": "Cardamom is a spice made from the seeds of several plants in the genera Elettaria and Amomum in the family Zingiberaceae. Both genera are native to the Indian subcontinent and Indonesia. It is recognized by its small seed pods and is widely used in cooking and baking.",
+    "Main Characteristics": "1. Varieties: Includes green cardamom (mild, sweet) and black cardamom (strong, smoky).\n\n2. Origin: Native to tropical regions including Indonesia.\n\n3. Aroma: Highly aromatic with a resinous fragrance.",
+    "Usage": "1. Culinary: Often used in curries, desserts, and traditional dishes.\n\n2. Beverages: Used to flavor teas, coffees, and spiced drinks.\n\n3. Traditional Medicine: Used in various herbal remedies for digestion and respiratory health.",
+    "Health Benefits": "Rich in antioxidants, cardamom helps fight free radicals, freshens breath, reduces stress, and supports digestive and respiratory health.",
+    "images": [
+      "/assets/img/images/kapulaga/kapulaga1.png"
     ]
   }
 ]

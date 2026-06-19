@@ -1,7 +1,7 @@
 <template>
   <section id="organization" class="clients section light-background" style="border-top: 2px solid rgba(0, 0, 0, 0.1); border-bottom: 5px solid rgba(0, 0, 0, 0.1);">
     <div class="section-title" data-aos="fade-up" style="padding-bottom: 0px">
-      <h2 style="color: black;">We Are Engaged In a Partnership With This Company</h2>
+      <h2 style="color: black;">{{ t.partnership }}</h2>
     </div>
     <div class="container" data-aos="fade-up" style="margin-top: 50px;">
       <!-- Untuk layar besar -->
@@ -49,8 +49,20 @@ export default {
         { imgSrc: "assets/img/partner/fsa.png", altText: "Client 2" },
         { imgSrc: "assets/img/partner/sucofindo.png", altText: "Client 3" },
       ],
+      currentLang: "en"
     };
   },
+  computed: {
+    t() {
+      const isId = this.currentLang === "id";
+      return {
+        partnership: isId ? "Kami Menjalin Kemitraan Dengan Perusahaan Ini" : "We Are Engaged In a Partnership With This Company",
+      };
+    }
+  },
+  created() {
+    this.currentLang = localStorage.getItem("app_lang") || "en";
+  }
 };
 </script>
 

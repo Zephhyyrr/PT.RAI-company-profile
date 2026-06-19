@@ -59,6 +59,14 @@
               >Contact</router-link
             >
           </li>
+          <li style="margin-left: 20px; display: flex; gap: 10px; align-items: center; justify-content: center;">
+            <a href="#" @click.prevent="setLanguage('id')" :style="{ opacity: currentLang === 'id' ? 1 : 0.4 }" style="padding: 0; text-decoration: none; transition: 0.3s;" title="Indonesia">
+              <img src="https://flagcdn.com/w40/id.png" width="24" alt="Indonesia" style="border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+            </a>
+            <a href="#" @click.prevent="setLanguage('en')" :style="{ opacity: currentLang === 'en' ? 1 : 0.4 }" style="padding: 0; text-decoration: none; transition: 0.3s;" title="English">
+              <img src="https://flagcdn.com/w40/gb.png" width="24" alt="English" style="border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+            </a>
+          </li>
         </ul>
         <i
           class="mobile-nav-toggle d-xl-none bi bi-list"
@@ -70,7 +78,8 @@
 </template>
 
 <script>
-import products from "../data/products-en.json";
+import productsEn from "../data/products-en.json";
+import productsId from "../data/products-id.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -78,9 +87,15 @@ export default {
   name: "AppHeader",
   data() {
     return {
-      products,
+      products: [],
       activeSection: "home",
+      currentLang: "en"
     };
+  },
+  created() {
+    this.currentLang = localStorage.getItem("app_lang") || "en";
+    const allProducts = this.currentLang === "id" ? productsId : productsEn;
+    this.products = allProducts.filter(p => p.id !== "cardamom");
   },
   mounted() {
     AOS.init();
@@ -161,10 +176,25 @@ export default {
       mobileNavToggleBtn.classList.toggle("bi-list");
       mobileNavToggleBtn.classList.toggle("bi-x");
     },
+    setLanguage(lang) {
+      localStorage.setItem('app_lang', lang);
+      sessionStorage.setItem('lang_popup_seen', 'true');
+      window.location.reload(); 
+    }
   },
 };
 </script>
 
 
 <style scoped>
+.header {
+  padding: 10px 0 !important;
+  min-height: 60px !important;
+}
+.header .logo img {
+  max-height: 40px !important;
+}
+.header .sitename {
+  font-size: 1.5rem !important;
+}
 </style>

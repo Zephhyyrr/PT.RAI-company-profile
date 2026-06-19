@@ -2,22 +2,12 @@
   {
     "id": "cocofiber",
     "title": "Cocofiber (Sabut Kelapa)",
-    "intro": {
-      "Asal Usul": "Berasal dari sabut kelapa pilihan di Indonesia.",
-      "Keunggulan": "Kuat, tahan lama, dan ramah lingkungan.",
-      "Penggunaan": "Banyak digunakan untuk industri, pertanian, dan rumah tangga."
-    },
-    "benefit": {
-      "Ramah Lingkungan": "100% organik dan dapat terurai secara alami.",
-      "Tahan Air Asin": "Sangat tahan terhadap kerusakan akibat air asin dan degradasi mikroba.",
-      "Menyuburkan Tanah": "Sangat baik digunakan sebagai media tanam dan penahan air."
-    },
-    "usage": {
-      "Pertanian": "Sebagai media tanam (cocopeat) atau mulsa.",
-      "Industri": "Bahan utama pembuatan tali, keset, sikat, dan matras.",
-      "Pengendalian Erosi": "Sering digunakan sebagai geotextile untuk menstabilkan tanah."
-    },
-    "closing": "Cocofiber adalah solusi alami dan serbaguna untuk kebutuhan industri maupun lingkungan.",
+    "short": "Cocofiber berkualitas tinggi dari Indonesia, dikenal karena daya tahan dan ramah lingkungannya.",
+    "description": "Cocofiber, atau sabut kelapa, adalah serat alami yang diekstrak dari kulit luar kelapa. Serat ini banyak digunakan dalam produk seperti keset lantai, sikat, dan kasur. Sabut kelapa sangat dihargai karena daya tahannya, ketahanannya terhadap air, dan sifat ramah lingkungannya.",
+    "Main Characteristics": "1. Daya Tahan: Sangat tahan terhadap air asin dan degradasi mikroba.\n\n2. Ramah Lingkungan: 100% alami dan dapat terurai secara hayati.\n\n3. Keserbagunaan: Cocok untuk pertanian, pelapis furnitur, dan pengendalian erosi.",
+    "Usage": "1. Pertanian: Digunakan sebagai media tanam atau mulsa.\n\n2. Industri: Digunakan dalam pembuatan tali, keset, dan kasur.\n\n3. Pengendalian Erosi: Digunakan untuk membuat geotekstil untuk stabilisasi tanah.",
+    "Nutritional Content": "Kaya akan lignin dan selulosa, yang membuatnya sangat kuat dan lambat membusuk.",
+    "Shipping Process": "1. Transportasi: Ditekan dan dikemas dalam bentuk bal untuk memaksimalkan ruang kontainer.\n\n2. Dokumentasi: Dikirim dengan sertifikat fitosanitasi dan dokumen asal yang tepat.",
     "images": [
       "/assets/img/images/cocofiber/cocofiber1.jpeg",
       "/assets/img/images/cocofiber/cocofiber2.jpeg",
@@ -26,128 +16,106 @@
     ]
   },
   {
+    "id": "Cinnamon-Stick-6cm",
+    "title": "Kayu Manis Batang 6CM",
+    "short": "Kayu manis Cassia panjang 6.0CM, kandungan minyak atsiri berkisar 4% hingga 8%",
+    "description": "Kayu manis batangan adalah salah satu bentuk paling klasik dari rempah ini, dikenal karena keanggunan dan bentuk uniknya. Terbuat dari kulit pohon Cinnamomum, batang kayu manis memiliki bentuk melingkar dan bertekstur, memberikan daya tarik visual yang menawan.",
+    "Main Characteristics": "1. Aroma Memikat: Batang kayu manis mengeluarkan aroma hangat dan manis yang dapat membangkitkan selera makan dan menciptakan suasana yang nyaman.\n\n2. Rasa Kuat: Memberikan rasa pedas dan manis yang khas, ideal untuk digunakan dalam berbagai masakan, mulai dari kue hingga hidangan gurih.\n\n3. Kandungan Minyak Atsiri: Mengandung tingkat minyak atsiri yang tinggi, memberikan manfaat kesehatan dan sifat aromaterapi yang menenangkan. \n\n4. Bentuk (Cinnamon Quills): Berbentuk batang kayu manis yang digulung. Biasa digunakan dalam masakan dan minuman.",
+    "images": [
+      "/assets/img/images/kayumanis-version/CinnamonStick-6cm.png"
+    ]
+  },
+  {
+    "id": "Cinnamon-Stick-8cm",
+    "title": "Kayu Manis Batang 8CM",
+    "short": "Kayu manis Cassia panjang 8.0CM, kandungan minyak atsiri berkisar 4% hingga 8%",
+    "description": "Kayu manis batangan adalah salah satu bentuk paling klasik dari rempah ini, dikenal karena keanggunan dan bentuk uniknya. Terbuat dari kulit pohon Cinnamomum, batang kayu manis memiliki bentuk melingkar dan bertekstur, memberikan daya tarik visual yang menawan.",
+    "Main Characteristics": "1. Aroma Memikat: Batang kayu manis mengeluarkan aroma hangat dan manis yang dapat membangkitkan selera makan dan menciptakan suasana yang nyaman.\n\n2. Rasa Kuat: Memberikan rasa pedas dan manis yang khas, ideal untuk digunakan dalam berbagai masakan, mulai dari kue hingga hidangan gurih.\n\n3. Kandungan Minyak Atsiri: Mengandung tingkat minyak atsiri yang tinggi, memberikan manfaat kesehatan dan sifat aromaterapi yang menenangkan. \n\n4. Bentuk (Cinnamon Quills): Berbentuk batang kayu manis yang digulung. Biasa digunakan dalam masakan dan minuman.",
+    "images": [
+      "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png"
+    ]
+  },
+  {
+    "id": "Cinnamon-KF",
+    "title": "Kayu Manis KF",
+    "short": "Kayu Manis Cassia panjang 1-2 meter kandungan minyak atsiri berkisar 3% hingga 4%",
+    "description": "Kayu manis tipe KF (Quality Factor) merupakan salah satu varian kayu manis yang dikenal dengan kualitas tinggi dan aroma khasnya. Dikenal dalam dunia kuliner maupun industri, kayu manis KF berasal dari kulit pohon Cinnamomum yang dipilih secara selektif untuk menghasilkan produk unggulan.",
+    "Main Characteristics": "Aroma Kuat: Kayu manis tipe KF memiliki aroma yang lebih tajam dan kaya dibandingkan varian lainnya, menjadikannya pilihan ideal untuk berbagai aplikasi kuliner. Rasa Dalam: Memberikan rasa manis dan pedas yang seimbang, kayu manis tipe KF sangat cocok untuk digunakan dalam hidangan manis maupun gurih. Kandungan Minyak Atsiri: Memiliki kandungan minyak atsiri yang tinggi, biasanya berkisar antara 4% hingga 8%, yang memberikan keharuman dan manfaat kesehatan lebih besar.",
+    "Usage": "1. Dalam Masakan: Kayu manis tipe KF sering digunakan dalam pembuatan kue, roti, minuman hangat, serta masakan tradisional yang membutuhkan sentuhan rasa manis dan pedas.\n\n2. Industri Makanan dan Minuman: Banyak digunakan di industri untuk memberikan aroma dan rasa khas pada produk makanan dan minuman.\n\n3. Aromaterapi: Karena kandungan minyak atsirinya yang tinggi, kayu manis tipe KF juga dapat digunakan dalam praktik aromaterapi untuk meningkatkan mood dan relaksasi.",
+    "Health Benefits": "Kayu manis tipe KF diketahui memiliki sifat anti-inflamasi dan antioksidan yang bermanfaat untuk kesehatan. Selain itu, dapat membantu meningkatkan pencernaan dan mengatur kadar gula darah.",
+    "images": [
+      "/assets/img/images/kayumanis-version/Cinnamon-KF.png"
+    ]
+  },
+  {
+    "id": "Cinnamon-KAKB",
+    "title": "Kayu Manis KA/KB",
+    "short": "Kayu Manis Cassia panjang 1 meter kandungan minyak atsiri berkisar 2% hingga 3%",
+    "description": "Kayu manis tipe KA/KS adalah varian kayu manis yang dikenal karena kualitasnya yang baik dan karakteristik rasanya yang unik. Jenis ini berasal dari kulit pohon Cinnamomum yang dipilih dengan cermat, menjadikannya pilihan populer di kalangan produsen dan konsumen.",
+    "Main Characteristics": "1. Aroma Lembut: Kayu manis tipe KA/KS memiliki aroma yang lebih lembut dibandingkan varian lainnya, namun tetap memberikan keharuman yang khas dan menggugah selera.\n\n2. Rasa Seimbang: Keseimbangan rasa manis dan pedasnya membuatnya cocok untuk berbagai jenis hidangan, baik manis maupun gurih.\n\n3. Kandungan Minyak Atsiri: Meskipun kandungan minyak atsirinya mungkin sedikit lebih rendah daripada tipe lainnya, kayu manis KA/KS tetap memiliki manfaat aromatik dan kesehatan yang baik.",
+    "Usage": "1. Dalam Masakan: Sering digunakan dalam pembuatan kue, hidangan penutup, dan masakan tradisional yang membutuhkan sentuhan kayu manis tanpa rasa yang berlebihan.\n\n2. Minuman: Ideal untuk ditambahkan ke minuman hangat seperti teh, kopi, atau cokelat panas, memberikan aroma dan rasa yang menyenangkan.\n\n3. Dekorasi: Kayu manis tipe KA/KS juga sering digunakan sebagai elemen dekoratif dalam penyajian makanan dan minuman.",
+    "Health Benefits": "Kayu manis tipe KA/KS memiliki sifat anti-inflamasi dan antioksidan yang bermanfaat untuk kesehatan. Selain itu, dapat membantu meningkatkan pencernaan dan berpotensi mengatur kadar gula darah.",
+    "images": [
+      "/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png"
+    ]
+  },
+  {
+    "id": "Nutmeg",
+    "title": "Buah Pala",
+    "short": "Pala dari Jambi, Indonesia, dicirikan dengan rasa pedas manis dan bunga pala aromatik, ideal untuk keperluan kuliner dan perdagangan.",
+    "description": "Pala adalah buah tropis yang dibudidayakan di Jambi, Indonesia, tumbuh subur di kondisi kelembapan tinggi dan tanah yang subur. Dikenal karena kulit luarnya yang kuning cerah dan aromanya yang kaya, pala dihargai karena fleksibilitas kulinernya dan manfaat kesehatannya.",
+    "Main Characteristics": "1. Ciri Fisik: Buah bulat dengan diameter 5-10 cm dengan kulit berwarna kuning cerah saat matang.\n\n2. Kesegaran: Harus bebas dari cacat, kerusakan, dan kontaminasi.\n\n3. Rasa dan Tekstur: Manis dengan sedikit rasa pedas, aroma khas, serta daging buah yang lembut dan berair.\n\n4. Bagian Perdagangan: Mencakup biji aromatik utuh, tidak retak, serta bunga pala (mace) yang bersih dan berwarna merah cerah.",
+    "Usage": "1. Kuliner: Umumnya digunakan dalam makanan penutup, makanan yang dipanggang, dan masakan gurih untuk profil rasanya yang unik.\n\n2. Minuman: Ideal untuk meningkatkan minuman hangat seperti teh, kopi, atau cokelat panas.\n\n3. Aromatik: Sering dimanfaatkan dalam campuran rempah-rempah dan parfum untuk aromanya yang kuat.",
+    "Nutritional Content": "Kaya akan vitamin C, vitamin B, dan mineral penting seperti magnesium dan potasium, berkontribusi pada kesehatan dan kesejahteraan secara keseluruhan.",
+    "Health Benefits": "Pala menawarkan sifat anti-inflamasi dan antioksidan, mendukung pencernaan, dan dapat membantu mengatur kadar gula darah.",
+    "Quality Standards": "1. Bebas hama dan penyakit.\n\n2. Dikemas dalam wadah standar internasional yang aman untuk menjaga kesegaran.\n\n3. Bersertifikat organik (jika ada) dan sesuai dengan standar keamanan pangan seperti HACCP.",
+    "Shipping Process": "1. Kontainer berpendingin digunakan untuk mempertahankan kesegaran selama perjalanan.\n\n2. Dokumentasi ekspor lengkap mencakup sertifikat kesehatan dan asal usul.",
+    "images": [
+      "/assets/img/images/buahpala/buahpala1.png",
+      "/assets/img/images/buahpala/buahpala2.png"
+    ]
+  },
+  {
+    "id": "ginger",
+    "title": "Jahe",
+    "short": "Jahe ekspor berkualitas tinggi dari Indonesia, dikenal dengan aroma tajam, kesegaran, dan kandungan gizi yang kaya.",
+    "description": "Jahe (Zingiber officinale) adalah tanaman tropis yang terutama ditanam di Indonesia, khususnya di daerah seperti Jawa, Sumatera, dan Bali. Jahe sangat dinilai karena rasanya yang kuat, aroma yang segar, dan berbagai manfaat kesehatannya.",
+    "Main Characteristics": "1. Ukuran: Panjang bervariasi dari 5-15 cm, dengan diameter 2-5 cm.\n\n2. Penampilan: Kulit luar berwarna coklat kekuningan, sedangkan dagingnya berwarna kuning atau putih.\n\n3. Aroma: Bau pedas dan tajam yang khas.\n\n4. Tekstur: Permukaan kasar, dengan daging yang padat dan segar.",
+    "Quality": "1. Kesegaran: Jahe harus segar, bebas dari busuk, cacat, hama, dan penyakit.\n\n2. Kadar Air: Dioptimalkan untuk menjaga kualitas dan kesegaran.",
+    "Standards": "1. Kemasan: Diamankan dalam wadah yang aman dan mematuhi standar internasional untuk menjaga kesegaran.\n\n2. Pelabelan: Termasuk informasi produk terperinci seperti asal, tanggal panen, dan kandungan gizi.",
+    "Nutritional Content": "Kaya akan vitamin (C dan B6), mineral (potasium dan magnesium), dan senyawa aktif seperti gingerol dan shogaol.",
+    "Certifications": "Bersertifikat organik (jika berlaku) dan mematuhi standar keamanan pangan internasional, termasuk HACCP dan ISO.",
+    "Shipping Process": "1. Transportasi: Dikirim menggunakan kontainer berpendingin untuk menjaga kesegaran.\n\n2. Dokumentasi: Dokumen ekspor lengkap, termasuk sertifikat kesehatan dan asal usul dipastikan.",
+    "images": [
+      "/assets/img/images/ginger/ginger1.png"
+    ]
+  },
+  {
+    "id": "Vanilla",
+    "title": "Vanilla Planifolia",
+    "short": "Polong vanili premium dari Indonesia, dikenal dengan aromanya yang kuat, rasa yang kaya, dan kualitas tinggi.",
+    "description": "Vanili (Vanilla planifolia) adalah tanaman tropis yang terutama dibudidayakan di Indonesia, khususnya di Jawa Barat dan Bali. Vanili dihargai karena aromanya yang manis dan kuat serta merupakan bahan utama dalam industri kuliner dan wewangian.",
+    "Main Characteristics": "1. Bentuk: Polong panjang dan ramping, biasanya berukuran panjang 15-25 cm.\n\n2. Warna: Coklat tua hingga hitam, dengan permukaan yang halus.\n\n3. Aroma: Sangat manis dan kuat, khas vanili kualitas tinggi.",
+    "Quality": "1. Kesegaran: Polong harus segar, lentur, bebas dari kekeringan, cacat, hama, dan penyakit.\n\n2. Kadar Air: Tingkat kelembapan ideal berkisar antara 25-30% untuk mempertahankan kesegaran dan aroma.",
+    "Standards": "1. Kemasan: Diamankan dalam wadah standar internasional yang aman untuk menjaga kualitas.\n\n2. Pelabelan: Mencakup informasi produk terperinci seperti asal, tanggal panen, dan kandungan nutrisi.",
+    "Nutritional Content": "Mengandung senyawa vanilin yang memberikan aroma dan rasa khas, bersama dengan antioksidan yang menawarkan manfaat kesehatan.",
+    "Certifications": "Bersertifikat organik (jika ada) dan sesuai dengan standar keamanan pangan internasional seperti HACCP dan ISO.",
+    "Shipping Process": "1. Transportasi: Dikirim menggunakan wadah berpendingin untuk mempertahankan kesegaran.\n\n2. Dokumentasi: Dokumen ekspor lengkap, termasuk sertifikat kesehatan dan asal usul dipastikan.",
+    "images": [
+      "/assets/img/images/vanilla/vanilla1.png",
+      "/assets/img/images/vanilla/vanilla2.png"
+    ]
+  },
+  {
     "id": "cardamom",
     "title": "Kapulaga",
-    "intro": {
-      "Beraneka Varietas": "Terdapat kapulaga hijau dan hitam.",
-      "Asal Daerah": "Asli dari India dan negara tropis lainnya.",
-      "Penggunaan Tradisional": "Sering digunakan dalam masakan dan minuman."
-    },
-    "benefit": {
-      "Antioxidant": "Melawan radikal bebas dalam tubuh.",
-      "Menyegarkan Napas": "Membantu mengatasi bau mulut.",
-      "Menurunkan Stres": "Aromanya menenangkan pikiran dan jiwa.",
-      "Mendukung Pencernaan dan Kesehatan Pernapasan": ""
-    },
-    "types": {
-      "Kapulaga Hijau": "Rasa lembut, umum digunakan.",
-      "Kapulaga Hitam": "Rasa lebih kuat dan berasap.",
-      "Kapulaga Putih": "Lebih langka, untuk masakan tertentu."
-    },
-    "comparison_with_other_spices": {
-      "Kapulaga vs. Cengkeh": "Kapulaga lebih segar, cengkeh lebih kuat.",
-      "Kapulaga vs. Kayu Manis": "Kapulaga lebih wangi, kayu manis manis.",
-      "Kapulaga vs. Jahe": "Jahe pedas, kapulaga lebih aroma."
-    },
-    "preparation": {
-      "Persiapan": "Cuci bersih dan keringkan.",
-      "Pecahkan Biji": "Gunakan mortar untuk melepaskan aroma.",
-      "Masak": "Tambahkan ke masakan sesuai selera."
-    },
-    "recipes": {
-      "Kari Kapulaga": "Lezat, padukan dengan daging dan sayur.",
-      "Dessert Kapulaga": "Ideal untuk baklava dan kue-kue spesial.",
-      "Minuman Rempah": "Bisa digunakan dalam teh dan kopi."
-    },
-    "traditional_medicine": {
-      "Membantu Meredakan Batuk dan Flu": "",
-      "Obat Alami": "Untuk mengatasi sakit perut.",
-      "Menurunkan Tekanan Darah": ""
-    },
-    "tips_for_selection_and_storage": {
-      "Penyimpanan": "Letakkan dalam wadah kedap udara.",
-      "Tempat": "Jauhkan dari cahaya dan kelembapan.",
-      "Kualitas": "Pilih biji bersih tanpa cacat."
-    },
-    "closing": "Kapulaga, simbol warisan kuliner Indonesia."
-  },
-  {
-    "id": "cinnamon",
-    "title": "Kayu Manis",
-    "intro": {
-      "Asal Usul": "Kayu manis berasal dari kulit pohon Cinnamomum.",
-      "Varietas": "Jenis yang umum adalah Cinnamomum verum dan Cinnamomum cassia.",
-      "Rasa dan Aroma": "Kayu manis memiliki rasa manis dan pedas yang khas."
-    },
-    "benefit": {
-      "Anti-Inflamasi": "Kayu manis mengandung senyawa anti-inflamasi yang membantu meredakan peradangan.",
-      "Mendukung Metabolisme": "Konsumsi kayu manis dapat membantu meningkatkan metabolisme tubuh.",
-      "Menjaga Kesehatan Jantung": "Kayu manis bermanfaat untuk menjaga kesehatan jantung dan menurunkan kolesterol."
-    },
-    "types": {
-      "Cinnamomum verum": "Kayu manis asli dengan rasa yang lebih lembut dan manis.",
-      "Cinnamomum cassia": "Lebih umum dan kuat, sering digunakan dalam masakan.",
-      "Cinnamomum loureiroi": "Kayu manis Vietnam, memiliki aroma yang sangat kuat."
-    },
-    "usage": {
-      "Menambah Aroma": "Tambahkan kayu manis saat memasak sup atau kari untuk aroma yang kuat.",
-      "Campuran Minuman": "Gunakan kayu manis dalam teh atau kopi untuk rasa hangat.",
-      "Padu Padan dengan Makanan Manis": "Campurkan kayu manis dalam adonan kue atau oatmeal."
-    },
-    "historical_use": {
-      "Sejarah di Indonesia": "Kayu manis telah digunakan di Indonesia sejak abad ke-9 sebagai rempah berharga.",
-      "Pusat Perdagangan": "Indonesia menjadi pusat perdagangan kayu manis dalam perdagangan rempah dunia."
-    },
-    "ayurvedic_perspective": {
-      "Keseimbangan Energi": "Kayu manis membantu menyeimbangkan pitta dan kapha dalam tubuh.",
-      "Penggunaan Sehari-hari": "Sering digunakan dalam ramuan herbal dan teh Ayurveda.",
-      "Manfaat Kesehatan": "Dianggap dapat mengatasi masalah pencernaan dan meningkatkan daya tahan tubuh."
-    },
-    "storage_tips": {
-      "Kondisi Penyimpanan": "Selalu simpan kayu manis di tempat yang kering dan sejuk.",
-      "Penggunaan Wadah": "Gunakan wadah kedap udara agar kayu manis tetap segar.",
-      "Durasi Penyimpanan": "Kayu manis utuh dapat bertahan lebih lama dibandingkan bubuk."
-    },
-    "closing": "Kayu manis adalah rempah aromatik yang kaya manfaat."
-  },
-  {
-    "id": "nutmeg",
-    "title": "Buah Pala",
-    "intro": {
-      "Asal Usul": "Buah pala berasal dari pulau Banda, Indonesia. Dikenal karena aromanya yang khas.",
-      "Khasiat Sehat": "Mengandung antioksidan, buah pala dapat meningkatkan kesehatan pencernaan.",
-      "Kesegaran Rasa": "Menawarkan rasa pedas manis, cocok untuk berbagai masakan dan kue."
-    },
-    "benefit": {
-      "Menjaga Kesehatan Jantung": "Buah pala membantu mengurangi risiko penyakit jantung.",
-      "Meningkatkan Kualitas Tidur": "Memiliki efek menenangkan yang dapat membantu tidur lebih nyenyak.",
-      "Membantu Proses Pencernaan": "Pala membantu mengurangi gangguan pencernaan dan perut kembung."
-    },
-    "usage": {
-      "Masakan Tradisional": "Digunakan dalam masakan khas Indonesia seperti rendang atau soto.",
-      "Panganan Manis": "Menambahkan aroma pada kue dan minuman seperti wedang jahe.",
-      "Rempah Campuran": "Sering dikombinasikan dengan kayu manis, cengkeh, dan jahe."
-    },
-    "selection_and_storage": {
-      "Pilih yang Segar": "Cari buah pala yang keras dan berwarna cerah.",
-      "Penyimpanan": "Simpan di tempat kering dan sejuk untuk menjaga kesegaran.",
-      "Penggunaan Tepat": "Gunakan dalam waktu 6 bulan untuk kualitas terbaik."
-    },
-    "tips_for_optimal_use": {
-      "Penggunaan Secukupnya": "Gunakan dengan bijak untuk menghindari rasa yang terlalu tajam.",
-      "Campurkan dengan Bahan Lain": "Kombinasikan dengan bahan segar untuk meningkatkan aroma.",
-      "Eksperimen": "Cobalah dalam berbagai hidangan untuk menemukan kombinasi terbaik."
-    },
-    "recipes": {
-      "Rendang Daging": "Gunakan buah pala sebagai rempah dalam rendang pedas yang kaya rasa.",
-      "Kue Pala": "Tambahkan pala dalam adonan kue untuk hasil yang wangi dan gurih.",
-      "Sambal Pala": "Buat sambal dengan pala sebagai bahan utama, cocok untuk lauk."
-    },
-    "enhancement_in_cuisine": {
-      "Aroma yang Khas": "Rempah pala meningkatkan aroma masakan, membuatnya lebih menggugah selera.",
-      "Rasa yang Unik": "Menghadirkan kombinasi rasa yang membuat makanan lebih berkesan.",
-      "Cocok untuk Semua Masakan": "Kombinasikan dengan masakan manis dan gurih untuk variasi rasa."
-    },
-    "closing": "Buah pala adalah bumbu kaya rempah yang wajib dicoba."
+    "short": "Kapulaga premium dari Indonesia, dikenal dengan aromanya yang intens dan rasanya yang kaya.",
+    "description": "Kapulaga adalah rempah-rempah yang terbuat dari biji beberapa tanaman dalam famili Zingiberaceae. Tumbuhan ini berasal dari kepulauan tropis di Indonesia dan India. Dikenali dari polong bijinya yang kecil dan banyak digunakan dalam masakan serta panggangan kue.",
+    "Main Characteristics": "1. Varietas: Termasuk kapulaga hijau (lembut, manis) dan kapulaga hitam (kuat, beraroma asap).\n\n2. Asal: Berasal dari daerah tropis termasuk Indonesia.\n\n3. Aroma: Sangat aromatik dengan wangi yang khas.",
+    "Usage": "1. Kuliner: Sering digunakan dalam kari, makanan penutup, dan masakan tradisional.\n\n2. Minuman: Digunakan untuk membumbui teh, kopi, dan minuman rempah lainnya.\n\n3. Pengobatan Tradisional: Digunakan dalam berbagai obat herbal untuk pencernaan dan kesehatan pernapasan.",
+    "Health Benefits": "Kaya akan antioksidan, kapulaga membantu melawan radikal bebas, menyegarkan napas, mengurangi stres, serta mendukung pencernaan dan kesehatan pernapasan.",
+    "images": [
+      "/assets/img/images/kapulaga/kapulaga1.png"
+    ]
   }
 ]

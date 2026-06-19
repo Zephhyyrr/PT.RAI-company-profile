@@ -2,8 +2,8 @@
   <section id="contact" class="contact section light-background" style="padding: 0;">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up" style="padding-top: 30px;">
-      <h2>Contact</h2>
-      <p>Contact us here</p>
+      <h2>{{ t.contact }}</h2>
+      <p>{{ t.contactUsHere }}</p>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -12,7 +12,7 @@
       <a href="https://maps.app.goo.gl/3H5LWyxHy4ywKMm8A" target="_blank" style="text-decoration: none; color: inherit">
         <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="600" style="height: 100%; cursor: pointer">
           <img src="/assets/img/images/icons/ic_maps.png" alt="WhatsApp Icon" style="width: 55px; height: 55px" />
-          <h3>Address</h3>
+          <h3>{{ t.address }}</h3>
           <p style="text-align: center">Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia</p>
         </div>
       </a>
@@ -21,7 +21,7 @@
     <div class="col-lg-3 col-md-6 col-sm-6">
       <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400" style="height: 100%">
         <img src="/assets/img/images/icons/ic_wa.png" alt="WhatsApp Icon" style="width: 75px; height: 75px" />
-        <h3>Chat on WhatsApp</h3>
+        <h3>{{ t.chatOnWhatsapp }}</h3>
         <p><a href="https://wa.me/6282374635328" target="_blank" style="color: #000;">+6282374635328 (Alno Ramalino)</a></p>
         <p><a href="https://wa.me/6281275341600" target="_blank" style="color: #000;">+6281275341600 (Anjas)</a></p>
       </div>
@@ -31,7 +31,7 @@
       <a href="https://www.instagram.com/pt.rumpunalamindonesia/?utm_source=ig_web_button_share_sheet" target="_blank" style="text-decoration: none; color: inherit">
         <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="600" style="height: 100%; cursor: pointer">
           <img src="/assets/img/images/icons/ic_ig.png" alt="WhatsApp Icon" style="width: 75px; height: 75px" />
-          <h3>Follow Our Instagram</h3>
+          <h3>{{ t.followOurInstagram }}</h3>
           <p>pt.rumpunalamindonesia</p>
         </div>
       </a>
@@ -41,7 +41,7 @@
       <a href="https://www.linkedin.com/in/rumpun-alam-indonesia-584a84336/" target="_blank" style="text-decoration: none; color: inherit">
         <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="600" style="height: 100%; cursor: pointer">
           <img src="/assets/img/images/icons/ic_linkedin.png" alt="WhatsApp Icon" style="width: 50px; height: 50px" />
-          <h3>Connect With Our LinkedIn</h3>
+          <h3>{{ t.connectWithOurLinkedin }}</h3>
           <p>Rumpun Alam Indonesia</p>
         </div>
       </a>
@@ -57,13 +57,13 @@
       <form @submit.prevent="sendEmail" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
         <div class="row gy-4">
           <div class="col-md-12">
-            <input type="text" v-model="name" class="form-control" placeholder="Your Name" required />
+            <input type="text" v-model="name" class="form-control" :placeholder="t.yourName" required />
           </div>
           <div class="col-md-12">
-            <input type="text" v-model="subject" class="form-control" placeholder="Subject" required />
+            <input type="text" v-model="subject" class="form-control" :placeholder="t.subject" required />
           </div>
           <div class="col-md-12">
-            <textarea v-model="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+            <textarea v-model="message" class="form-control" rows="6" :placeholder="t.message" required></textarea>
           </div>
 
           <!-- hCaptcha Widget -->
@@ -77,7 +77,7 @@
           </div>
 
           <div class="col-md-12 text-center">
-            <button type="submit" style="background-color: #007a08; color: white;">Send Message</button>
+            <button type="submit" style="background-color: #007a08; color: white;">{{ t.sendMessage }}</button>
           </div>
         </div>
       </form>
@@ -100,7 +100,28 @@ export default {
       lastSubmit: null,
       hcaptchaSiteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8",
       hcaptchaLoaded: false,
+      currentLang: "en"
     };
+  },
+  computed: {
+    t() {
+      const isId = this.currentLang === "id";
+      return {
+        contact: isId ? "Kontak" : "Contact",
+        contactUsHere: isId ? "Hubungi kami di sini" : "Contact us here",
+        address: isId ? "Alamat" : "Address",
+        chatOnWhatsapp: isId ? "Chat di WhatsApp" : "Chat on WhatsApp",
+        followOurInstagram: isId ? "Ikuti Instagram Kami" : "Follow Our Instagram",
+        connectWithOurLinkedin: isId ? "Terhubung di LinkedIn Kami" : "Connect With Our LinkedIn",
+        yourName: isId ? "Nama Anda" : "Your Name",
+        subject: isId ? "Subjek" : "Subject",
+        message: isId ? "Pesan" : "Message",
+        sendMessage: isId ? "Kirim Pesan" : "Send Message"
+      };
+    }
+  },
+  created() {
+    this.currentLang = localStorage.getItem("app_lang") || "en";
   },
   mounted() {
     this.loadHcaptcha();

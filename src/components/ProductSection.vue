@@ -181,21 +181,21 @@ export default {
     this.currentLang = localStorage.getItem("app_lang") || "en";
     
     if (this.currentLang === "id") {
-      this.products = productsId;
+      this.products = productsId.filter(p => p.id !== "cardamom");
       this.cinnamonDetails = cinnamonGeneralId.slice(0, 3);
       this.longDescription = cinnamonGeneralId[3]["long-description"];
       this.moistureHumidity = cinnamonGeneralId[4];
       this.cocofiberLongDescription = cocofiberGeneralId[3]["long-description"];
       this.cocofiberMoistureHumidity = cocofiberGeneralId[4];
     } else if (this.currentLang === "cn") {
-      this.products = productsCn;
+      this.products = productsCn.filter(p => p.id !== "cardamom");
       this.cinnamonDetails = cinnamonGeneralCn.slice(0, 3);
       this.longDescription = cinnamonGeneralCn[3]["long-description"];
       this.moistureHumidity = cinnamonGeneralCn[4];
       this.cocofiberLongDescription = cocofiberGeneralCn[3]["long-description"];
       this.cocofiberMoistureHumidity = cocofiberGeneralCn[4];
     } else {
-      this.products = productsEn;
+      this.products = productsEn.filter(p => p.id !== "cardamom");
       this.cinnamonDetails = cinnamonGeneral.slice(0, 3);
       this.longDescription = cinnamonGeneral[3]["long-description"];
       this.moistureHumidity = cinnamonGeneral[4];

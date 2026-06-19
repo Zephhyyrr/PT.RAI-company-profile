@@ -55,8 +55,9 @@ export default {
   computed: {
     t() {
       const isId = this.currentLang === "id";
+      const isCn = this.currentLang === "cn";
       return {
-        partnership: isId ? "Kami Menjalin Kemitraan Dengan Perusahaan Ini" : "We Are Engaged In a Partnership With This Company",
+        partnership: isId ? "Kami Menjalin Kemitraan Dengan Perusahaan Ini" : isCn ? "我们与这些公司建立了合作伙伴关系" : "We Are Engaged In a Partnership With This Company",
       };
     }
   },

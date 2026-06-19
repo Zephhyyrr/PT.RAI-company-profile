@@ -135,10 +135,13 @@
 // Import the JSON data
 import productsEn from "../data/products-en.json";
 import productsId from "../data/products-id.json";
-import cinnamonDetailsEn from "../data/cinnamon-general.json";
-import cocofiberDetailsEn from "../data/cocofiber-general.json";
-import cinnamonDetailsId from "../data/cinnamon-general-id.json";
-import cocofiberDetailsId from "../data/cocofiber-general-id.json";
+import productsCn from "../data/products-cn.json";
+import cinnamonGeneral from "../data/cinnamon-general.json";
+import cinnamonGeneralId from "../data/cinnamon-general-id.json";
+import cinnamonGeneralCn from "../data/cinnamon-general-cn.json";
+import cocofiberGeneral from "../data/cocofiber-general.json";
+import cocofiberGeneralId from "../data/cocofiber-general-id.json";
+import cocofiberGeneralCn from "../data/cocofiber-general-cn.json";
 
 export default {
   name: "ProductSection",
@@ -146,7 +149,6 @@ export default {
     return {
       products: [],
       cinnamonDetails: [],
-      cocofiberDetails: [],
       longDescription: null,
       moistureHumidity: null,
       cocofiberLongDescription: null,
@@ -157,20 +159,21 @@ export default {
   computed: {
     t() {
       const isId = this.currentLang === "id";
+      const isCn = this.currentLang === "cn";
       return {
-        product: isId ? "Produk" : "Product",
-        ourProducts: isId ? "Produk kami didapatkan langsung dari petani rempah di Indonesia" : "Our products are sourced directly from spice farmers in Indonesia",
-        cinnamonForm: isId ? "Bentuk Kayu Manis" : "Cinnamon Form",
-        subtitle: isId ? "Sub-judul:" : "Sub-title:",
-        description: isId ? "Deskripsi:" : "Description:",
-        usage: isId ? "Penggunaan:" : "Usage:",
-        premiumCinnamon: isId ? "Kayu Manis Premium dari Kerinci" : "Premium Cinnamon from Kerinci",
-        moistureContent: isId ? "Kadar Air:" : "Moisture Content:",
-        humidity: isId ? "Kelembapan:" : "Humidity:",
-        premiumCocofiber: isId ? "Cocofiber Premium dari Indonesia" : "Premium Cocofiber from Indonesia",
-        impurities: isId ? "Kotoran:" : "Impurities:",
-        otherProducts: isId ? "Kami juga menyediakan produk rempah premium lainnya dari Indonesia." : "We also provide other premium spice products from Indonesia.",
-        checkDetail: isId ? "Lihat Detail di Bawah" : "Let's Check the Detail Below",
+        product: isId ? "Produk" : isCn ? "产品" : "Product",
+        ourProducts: isId ? "Produk kami didapatkan langsung dari petani rempah di Indonesia" : isCn ? "我们的产品直接来自印度尼西亚的香料农民" : "Our products are sourced directly from spice farmers in Indonesia",
+        cinnamonForm: isId ? "Bentuk Kayu Manis" : isCn ? "肉桂形状" : "Cinnamon Form",
+        subtitle: isId ? "Sub-judul:" : isCn ? "副标题:" : "Sub-title:",
+        description: isId ? "Deskripsi:" : isCn ? "描述:" : "Description:",
+        usage: isId ? "Penggunaan:" : isCn ? "用法:" : "Usage:",
+        premiumCinnamon: isId ? "Kayu Manis Premium dari Kerinci" : isCn ? "科林芝优质肉桂" : "Premium Cinnamon from Kerinci",
+        moistureContent: isId ? "Kadar Air:" : isCn ? "水分:" : "Moisture Content:",
+        humidity: isId ? "Kelembapan:" : isCn ? "湿度:" : "Humidity:",
+        premiumCocofiber: isId ? "Cocofiber Premium dari Indonesia" : isCn ? "印尼优质椰壳纤维" : "Premium Cocofiber from Indonesia",
+        impurities: isId ? "Kotoran:" : isCn ? "杂质:" : "Impurities:",
+        otherProducts: isId ? "Kami juga menyediakan produk rempah premium lainnya dari Indonesia." : isCn ? "我们还提供来自印尼的其他优质香料产品。" : "We also provide other premium spice products from Indonesia.",
+        checkDetail: isId ? "Lihat Detail di Bawah" : isCn ? "在下方查看详情" : "Let's Check the Detail Below",
       };
     }
   },
@@ -178,49 +181,26 @@ export default {
     this.currentLang = localStorage.getItem("app_lang") || "en";
     
     if (this.currentLang === "id") {
-      this.products = productsId.filter(p => p.id !== "cardamom");
-      this.cinnamonDetails = cinnamonDetailsId;
-      this.cocofiberDetails = cocofiberDetailsId;
+      this.products = productsId;
+      this.cinnamonDetails = cinnamonGeneralId.slice(0, 3);
+      this.longDescription = cinnamonGeneralId[3]["long-description"];
+      this.moistureHumidity = cinnamonGeneralId[4];
+      this.cocofiberLongDescription = cocofiberGeneralId[3]["long-description"];
+      this.cocofiberMoistureHumidity = cocofiberGeneralId[4];
+    } else if (this.currentLang === "cn") {
+      this.products = productsCn;
+      this.cinnamonDetails = cinnamonGeneralCn.slice(0, 3);
+      this.longDescription = cinnamonGeneralCn[3]["long-description"];
+      this.moistureHumidity = cinnamonGeneralCn[4];
+      this.cocofiberLongDescription = cocofiberGeneralCn[3]["long-description"];
+      this.cocofiberMoistureHumidity = cocofiberGeneralCn[4];
     } else {
-      this.products = productsEn.filter(p => p.id !== "cardamom");
-      this.cinnamonDetails = cinnamonDetailsEn;
-      this.cocofiberDetails = cocofiberDetailsEn;
-    }
-
-    const longDescriptionItem = this.cinnamonDetails.find(
-      (item) => item["long-description"]
-    );
-    if (longDescriptionItem) {
-      this.longDescription = longDescriptionItem["long-description"];
-    }
-
-    const moistureHumidityItem = this.cinnamonDetails.find(
-      (item) => item["Moisture Content"]
-    );
-    if (moistureHumidityItem) {
-      this.moistureHumidity = {
-        title: moistureHumidityItem.title,
-        "Moisture Content": moistureHumidityItem["Moisture Content"],
-        Humidity: moistureHumidityItem.Humidity,
-      };
-    }
-
-    const cocoLongDescriptionItem = this.cocofiberDetails.find(
-      (item) => item["long-description"]
-    );
-    if (cocoLongDescriptionItem) {
-      this.cocofiberLongDescription = cocoLongDescriptionItem["long-description"];
-    }
-
-    const cocoMoistureHumidityItem = this.cocofiberDetails.find(
-      (item) => item["Moisture Content"]
-    );
-    if (cocoMoistureHumidityItem) {
-      this.cocofiberMoistureHumidity = {
-        title: cocoMoistureHumidityItem.title,
-        "Moisture Content": cocoMoistureHumidityItem["Moisture Content"],
-        Humidity: cocoMoistureHumidityItem.Humidity,
-      };
+      this.products = productsEn;
+      this.cinnamonDetails = cinnamonGeneral.slice(0, 3);
+      this.longDescription = cinnamonGeneral[3]["long-description"];
+      this.moistureHumidity = cinnamonGeneral[4];
+      this.cocofiberLongDescription = cocofiberGeneral[3]["long-description"];
+      this.cocofiberMoistureHumidity = cocofiberGeneral[4];
     }
   },
 };

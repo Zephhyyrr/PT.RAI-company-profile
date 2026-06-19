@@ -106,8 +106,9 @@ export default {
   computed: {
     t() {
       const isId = this.currentLang === "id";
+      const isCn = this.currentLang === "cn";
       return {
-        heroTitle: isId ? "Perusahaan Ekspor Kayu Manis" : "Cinnamon Export Company"
+        heroTitle: isId ? "Perusahaan Ekspor Kayu Manis" : isCn ? "肉桂出口公司" : "Cinnamon Export Company"
       };
     }
   },
@@ -115,14 +116,6 @@ export default {
     this.currentLang = sessionStorage.getItem("app_lang") || localStorage.getItem("app_lang") || "en";
   },
   methods: {
-    /**
-     * Extract the YouTube video ID from a given URL.
-     * Supports various YouTube URL formats, including `youtu.be`, `youtube.com/watch`,
-     * `youtube.com/embed`, and `youtube.com/shorts`.
-     *
-     * @param {string} url - The YouTube URL.
-     * @returns {string|null} - The extracted video ID or `null` if not found.
-     */
     getYouTubeVideoId(url) {
       if (!url) return null;
 
@@ -154,5 +147,3 @@ export default {
 };
 </script>
 
-
-<style scoped src="./HeroSection.css"></style>

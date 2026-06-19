@@ -82,6 +82,8 @@ export default {
     this.currentLang = localStorage.getItem("app_lang") || "en";
     if (this.currentLang === "id") {
       this.loadProductId();
+    } else if (this.currentLang === "cn") {
+      this.loadProductCn();
     } else {
       this.loadProductEn();
     }
@@ -119,6 +121,13 @@ export default {
     loadProductCn() {
       const productId = this.$route.params.id;
       this.product = products_cn.find((p) => p.id === productId);
+      if (!this.product) {
+        if (productId.toLowerCase().includes('cinnamon')) {
+          this.product = products_cn.find((p) => p.id === 'Cinnamon-Stick-8cm');
+        } else {
+          this.$router.push('/');
+        }
+      }
     },
     loadProductId() {
       const productId = this.$route.params.id;
@@ -141,6 +150,8 @@ export default {
     "$route.params.id": function () {
       if (this.currentLang === "id") {
         this.loadProductId();
+      } else if (this.currentLang === "cn") {
+        this.loadProductCn();
       } else {
         this.loadProductEn();
       }

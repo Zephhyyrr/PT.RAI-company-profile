@@ -106,17 +106,18 @@ export default {
   computed: {
     t() {
       const isId = this.currentLang === "id";
+      const isCn = this.currentLang === "cn";
       return {
-        contact: isId ? "Kontak" : "Contact",
-        contactUsHere: isId ? "Hubungi kami di sini" : "Contact us here",
-        address: isId ? "Alamat" : "Address",
-        chatOnWhatsapp: isId ? "Chat di WhatsApp" : "Chat on WhatsApp",
-        followOurInstagram: isId ? "Ikuti Instagram Kami" : "Follow Our Instagram",
-        connectWithOurLinkedin: isId ? "Terhubung di LinkedIn Kami" : "Connect With Our LinkedIn",
-        yourName: isId ? "Nama Anda" : "Your Name",
-        subject: isId ? "Subjek" : "Subject",
-        message: isId ? "Pesan" : "Message",
-        sendMessage: isId ? "Kirim Pesan" : "Send Message"
+        contact: isId ? "Kontak" : isCn ? "联系我们" : "Contact",
+        contactUsHere: isId ? "Hubungi kami di sini" : isCn ? "在这里联系我们" : "Contact us here",
+        address: isId ? "Alamat" : isCn ? "地址" : "Address",
+        chatOnWhatsapp: isId ? "Chat di WhatsApp" : isCn ? "在WhatsApp上聊天" : "Chat on WhatsApp",
+        followOurInstagram: isId ? "Ikuti Instagram Kami" : isCn ? "关注我们的Instagram" : "Follow Our Instagram",
+        connectWithOurLinkedin: isId ? "Terhubung di LinkedIn Kami" : isCn ? "连接我们的LinkedIn" : "Connect With Our LinkedIn",
+        yourName: isId ? "Nama Anda" : isCn ? "您的名字" : "Your Name",
+        subject: isId ? "Subjek" : isCn ? "主题" : "Subject",
+        message: isId ? "Pesan" : isCn ? "信息" : "Message",
+        sendMessage: isId ? "Kirim Pesan" : isCn ? "发送信息" : "Send Message"
       };
     }
   },

@@ -32,7 +32,7 @@
               :class="{ active: isActive('product') }"
               @click.prevent="scrollTo('product')"
             >
-              Product
+              {{ t().products }}
               <i class="bi bi-chevron-down toggle-dropdown"></i>
             </router-link>
             <ul>
@@ -66,6 +66,9 @@
             <a href="#" @click.prevent="setLanguage('en')" :style="{ opacity: currentLang === 'en' ? 1 : 0.4 }" style="padding: 0; text-decoration: none; transition: 0.3s;" title="English">
               <img src="https://flagcdn.com/w40/gb.png" width="24" alt="English" style="border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.2);">
             </a>
+            <a href="#" @click.prevent="setLanguage('cn')" :style="{ opacity: currentLang === 'cn' ? 1 : 0.4 }" style="padding: 0; text-decoration: none; transition: 0.3s;" title="中文">
+              <img src="https://flagcdn.com/w40/cn.png" width="24" alt="中文" style="border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.2);">
+            </a>
           </li>
         </ul>
         <i
@@ -80,6 +83,7 @@
 <script>
 import productsEn from "../data/products-en.json";
 import productsId from "../data/products-id.json";
+import productsCn from "../data/products-cn.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -94,7 +98,9 @@ export default {
   },
   created() {
     this.currentLang = localStorage.getItem("app_lang") || "en";
-    const allProducts = this.currentLang === "id" ? productsId : productsEn;
+    let allProducts = productsEn;
+    if (this.currentLang === "id") allProducts = productsId;
+    if (this.currentLang === "cn") allProducts = productsCn;
     this.products = allProducts.filter(p => p.id !== "cardamom");
   },
   mounted() {
@@ -112,6 +118,13 @@ export default {
     },
   },
   methods: {
+    t() {
+      const isId = this.currentLang === "id";
+      const isCn = this.currentLang === "cn";
+      return {
+        products: isId ? "Produk" : isCn ? "产品" : "Products"
+      };
+    },
     scrollTo(sectionId) {
       if (this.$route.path.includes("/product/")) {
         // Redirect to home page and scroll after navigation

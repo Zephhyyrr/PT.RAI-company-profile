@@ -63,6 +63,43 @@
               clothing, food and medicine.
             </p>
           </div>
+          <div v-else-if="currentLang === 'cn'">
+            <p class="who-we-are">关于我们</p>
+            <h3>Rumpun Alam Indonesia</h3>
+            <p class="text-justify" style="text-align: justify;">
+              PT. Rumpun Alam Indonesia 成立于2021年，是一家从事制造和加工（生产）当地香料的企业。这些香料在印度尼西亚西苏门答腊省的自然收成中占主导地位。该过程由西苏门答腊省贸易和农业部门直接监控和监督，以进行可行性测试和食品安全保障。加工业务在2022年开始发展。在这里，从种植到全部收成的加工过程是一体化的。大部分操作通过手工完成，因此需要大量劳动力，尽管并非所有工人都在生产现场进行分拣。随着市场需求的大幅增加以及各国进出口意愿的提高，2023年我们正式成立了PT（有限责任公司），这是一家在印度尼西亚具有官方合法地位的注册法人企业。
+            </p>
+            <ul>
+              <p class="fst fs-6 fw-bold">
+                PT Rumpun Alam Indonesia 的使命和目标：
+              </p>
+              <li>
+                <span style="text-align: justify;"
+                  >向国内外更广泛的社会介绍印度尼西亚西苏门答腊省的自然财富。</span
+                >
+              </li>
+              <li>
+                <span style="text-align: justify;"
+                  >维护印度尼西亚作为国际公认的香料生产国的文化与遗产。
+                </span>
+              </li>
+              <li>
+                <span style="text-align: justify;">协助增加国家外汇收入。</span>
+              </li>
+              <li>
+                <span style="text-align: justify;"
+                  >致力于提升周边环境和社区的尊严与福祉。</span
+                >
+              </li>
+            </ul>
+            <p class="fst fs-6 fw-bold">
+              与此同时，PT Rumpun Alam Indonesia 的主要目标与一般企业一样，是实现利润（盈利能力）最大化。
+            </p>
+            <p class="fst fs-6 fw-bold">产品与营销：</p>
+            <p style="text-align: justify;">
+              PT Rumpun Alam Indonesia 生产各种传统香料，这些香料是自然文化的遗产。此外，西苏门答腊省独特的地理结构极大影响了其自然资源，产生了丰富的生物多样性。这些资源能够满足人类及其他生物的需求，如服装、食品和药品。
+            </p>
+          </div>
           <div v-else>
             <p class="who-we-are">Siapa Kami</p>
             <h3>Rumpun Alam Indonesia</h3>

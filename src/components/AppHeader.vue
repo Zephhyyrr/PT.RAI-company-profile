@@ -183,7 +183,7 @@ export default {
         this.activeSection = "product";
       }
     },
-    handleProductClick(e) {
+    handleProductClick() {
       if (document.body.classList.contains("mobile-nav-active")) {
         this.toggleDropdown();
       } else {
